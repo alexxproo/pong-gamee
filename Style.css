@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.score .label {
+    font-size: 0.9em;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score .value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #667eea;
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.8);
+}
+
+.instructions {
+    margin: 15px 0;
+    font-size: 0.85em;
+    opacity: 0.9;
+    color: #ccc;
+}
+
+#pongCanvas {
+    display: block;
+    margin: 20px auto;
+    background: #1a1a2e;
+    border: 3px solid #667eea;
+    border-radius: 8px;
+    cursor: none;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#startBtn {
+    background: #667eea;
+    color: white;
+}
+
+#startBtn:hover {
+    background: #764ba2;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(102, 126, 234, 0.8);
+}
+
+#startBtn:active {
+    transform: scale(0.95);
+}
+
+#resetBtn {
+    background: #ff6b6b;
+    color: white;
+}
+
+#resetBtn:hover {
+    background: #ee5a5a;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 107, 107, 0.8);
+}
+
+#resetBtn:active {
+    transform: scale(0.95);
+}
+
+.info {
+    font-size: 0.85em;
+    opacity: 0.7;
+    margin-top: 15px;
+}
